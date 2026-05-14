@@ -1,10 +1,8 @@
 # HubSignature
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+GitHub WebHook用の共通シークレットによるセキュアなリクエスト検証。
 
-Secure request validation with a common secret for GitHub WebHook.
-
-## Usage
+## 使い方
 
 ```js
 import { HubSignature } from "./HubSignature.js";
@@ -21,11 +19,11 @@ const verify = await hubs.verify(header, payload);
 console.log(verify);
 ```
 
-## Dependencies
+## 依存関係
 
 - [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API)
 - [Base16](https://github.com/code4fukui/Base16)
 
-## License
+## ライセンス
 
-MIT License — see [LICENSE](LICENSE).
+MIT License — 詳細は [LICENSE](LICENSE) を参照してください。
